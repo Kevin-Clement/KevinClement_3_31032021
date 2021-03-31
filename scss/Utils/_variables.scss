@@ -1,3 +1,13 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+
+$background-color-map: #ebe9e9;
+$linear-gradient:linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+
+
+%center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
