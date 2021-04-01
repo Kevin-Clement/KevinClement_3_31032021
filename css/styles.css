@@ -102,7 +102,10 @@ li {
 }
 
 .btn__about {
-  padding: 15px;
+  padding-top: 12px;
+  padding-right: 15px;
+  padding-bottom: 12px;
+  padding-left: 15px;
   border: transparent;
   border-radius: 30px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
@@ -115,7 +118,7 @@ li {
 .operation h2 {
   margin-top: 50px;
   margin-right: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 
@@ -167,13 +170,16 @@ li {
   width: 20px;
   height: 20px;
   position: relative;
-  right: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -10px;
   font-size: 1.3rem;
   color: #8a8a8a;
 }
 
 .operation__step li p {
-  padding-left: 20px;
+  padding-left: 10px;
   font-weight: 600;
 }
 
@@ -186,7 +192,10 @@ li {
   border-radius: 50%;
   color: white;
   position: relative;
-  right: 25px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -26px;
 }
 
 .restaurant {
@@ -205,6 +214,9 @@ li {
   font-size: 1.4em;
   position: relative;
   top: 10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .restaurant__card {
@@ -255,8 +267,10 @@ li {
 
 .card i {
   position: relative;
+  top: -10px;
+  right: 0;
+  bottom: 0;
   left: 295px;
-  bottom: 12px;
   font-size: 1.5rem;
   color: #8a8a8a;
   cursor: pointer;
@@ -277,8 +291,10 @@ li {
 
 .new {
   position: relative;
-  left: 260px;
   top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 260px;
   width: 70px;
   background-color: #99E2D0;
   color: #008766;
@@ -322,8 +338,4 @@ footer .fa-hands-helping {
 footer li {
   padding-bottom: 5px;
 }
-
-/* & i{
-    padding-right: 10px;
-}*/
 /*# sourceMappingURL=styles.css.map */

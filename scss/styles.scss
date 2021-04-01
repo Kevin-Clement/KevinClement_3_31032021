@@ -8,7 +8,7 @@
     @extend %center;
 }
 
-// Partie Map
+// MAP
 
 .map{
     @include padding (15px, 0, 15px, 20px);
@@ -25,7 +25,7 @@
     }
 }
 
-// Partie About
+// ABOUT
 
 .about{
     background-color: $background-color-gray;
@@ -42,20 +42,15 @@
     }
 }
 .btn__about{
-    padding: 15px;
-    border: transparent;
-    border-radius: 30px;
-    background-image: $linear-gradient;
-    color: white;
-    font-size: 1.05em;
-    cursor: pointer;
+    @include padding (12px,15px,12px,15px);
+    @include purple-btn;
 }
 
-// Operation
+// OPERATION
 
 .operation{
     & h2{
-        @include margin(50px, 0, 30px, 20px);
+        @include margin(50px, 0, 20px, 20px);
     }
     &__step{
         text-align: center;
@@ -83,13 +78,12 @@
     width: 295px;
     & i{
         @include dimension (20px,20px);
-        position: relative;
-        right: 5px;
+        @include position (0,0,0,-10px);
         font-size: 1.3rem;
-        color: rgb(138, 138, 138);
+        color: $icon-color;
     }
     & p{
-        padding-left: 20px;
+        padding-left: 10px;
         font-weight: 600;
     }
 }
@@ -98,9 +92,10 @@
     @include padding (2px,8px,2px,8px);
     border-radius: 50%;
     color: white;
-    position: relative;
-    right: 25px;
+    @include position (0,0,0,-26px);
 }
+
+// RESTAURANT 
 
 .restaurant{
     background-color: $background-color-gray;
@@ -108,8 +103,7 @@
     &__title{
         @include margin (0,0,0,18px);
         font-size: 1.4em;
-        position: relative;
-        top: 10px;
+        @include position (10px,0,0,0);
     }
     &__card{
         display: flex;
@@ -140,11 +134,9 @@
         font-size: 1.1em;
     }
     & i{
-        position: relative;
-        left: 295px;
-        bottom: 12px;
+        @include position (-10px,0,0,295px);
         font-size: 1.5rem;
-        color: rgb(138, 138, 138);
+        color: $icon-color;
         cursor: pointer;
         &:hover{
             color: $tertiary-color;
@@ -156,18 +148,19 @@
         bottom: 23px;
     }
 }
+
 .new{
-    position: relative;
-    left: 260px;
-    top: 50px;
+    @include position (50px,0,0,260px);
     width: 70px;
     background-color: $tertiary-color;
     color: #008766;
     border-radius: 3px;
     @include padding (5px,10px,5px,10px);
     text-align: center;
-    
 }
+
+// FOOTER
+
 footer{
     background-color: #353535;
     color: white;
@@ -189,7 +182,3 @@ footer{
         padding-bottom: 5px;
     }
 }
-
-/* & i{
-    padding-right: 10px;
-}*/
