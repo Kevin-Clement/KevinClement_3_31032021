@@ -10,3 +10,8 @@
     margin-bottom: $bottom;
     margin-left: $left;
 }
+
+@mixin dimension ($width, $height){
+    width: $width;
+    height: $height;
+}
