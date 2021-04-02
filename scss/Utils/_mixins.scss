@@ -31,3 +31,9 @@
     font-size: 1.05em;
     cursor: pointer;
 }
+@mixin background-border ($color, $border-top-left-radius, $border-top-right-radius, 
+$border-bottom-right-radius, $border-bottom-left-radius){
+    background-color: $color;
+    border-radius: $border-top-left-radius $border-top-right-radius 
+    $border-bottom-right-radius $border-bottom-left-radius;
+}

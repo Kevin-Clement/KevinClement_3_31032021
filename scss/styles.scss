@@ -19,6 +19,9 @@
     object-fit: cover;
 
 }
+
+// Pages
+
 .menu__main{
     background-color: $background-color-gray;
 }
@@ -26,20 +29,19 @@
 .menu{
     position:relative;
     bottom: 50px;
-    background-color: $background-color-gray;
-    border-radius: 45px 45px 0 0;
+    @include background-border ($background-color-gray, 45px,45px,0,0);
     &__title{
         @extend %center;
         flex-direction: row;
     }
     & h1{
-        @include margin (35px,0,15px,0);
+        @include margin (35px,0,0,0);
         font-size: 1.7em;
     }
     & i{
         font-size: 1.4em;
         margin-left: 20px;
-        padding-top: 18px;
+        padding-top: 30px;
         color: $icon-color;
     }
 }
@@ -50,7 +52,7 @@
         text-transform: uppercase;
         font-weight: 200;
         font-size: 1em;
-        @include margin (15px,0,5px,0);
+        @include margin (35px,0,5px,0);
     }
     & .line{
         display: block;
@@ -59,30 +61,31 @@
     }
 }
 .meals{
-    background-color: white;
-    border-radius: 1.2rem;
+    @include background-border (white, 1.2rem,1.2rem,1.2rem,1.2rem);
     box-shadow: 3px 3px 7px $shadow;
-    @include dimension (340px,68px);
+    @include dimension (340px,65px);
     & h4{
         @include margin (15px,0,0,0);
         @include padding (10px,0,0,15px);
     }
     & p{
         margin: 0;
-        @include padding (2px,0,5px,15px);
+        @include padding (2px,0,0,15px);
         font-size: .9em;
+        @extend %overflow;
     }
     & span{
         padding-right: 18px;
+        padding-left: 15px;
     }
 }
+
+
 .last__line{
     display: flex;
     justify-content: space-between;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
+
 // MAP
 
 .map{
@@ -143,10 +146,9 @@
     }
     display: flex;
     align-items: center;
-    background-color: $background-color-gray;
+    @include background-border ($background-color-gray, 20px, 20px, 20px, 20px);
     @include margin (5px, 20px, 25px, 10px);
     @include padding (12px, 15px, 12px, 15px);
-    border-radius: 20px;
     box-shadow: 3px 5px 6px $shadow;
     width: 295px;
     & i{
@@ -163,8 +165,7 @@
 .operation_step--number{
     @include position (0,0,0,-26px);
     @include padding (2px,8px,2px,8px);
-    background-color: $primary-color;
-    border-radius: 50%;
+    @include background-border ($primary-color, 50%, 50%, 50%, 50%);
     color: white;
 }
 
@@ -194,9 +195,8 @@
     }
     & figure{
         margin: 0;
-        background-color: white;
+        @include background-border (white, 1rem,1rem,1rem,1rem);
         width: 340px;
-        border-radius: 1rem;
         box-shadow: 3px 5px 5px $shadow;
     }
     & figcaption{
@@ -226,9 +226,8 @@
     font-weight: bold;
     @include padding (5px,10px,5px,10px);
     width: 70px;
-    background-color: $tertiary-color;
+    @include background-border ($tertiary-color, 3px,3px,3px,3px);
     color: #008766;
-    border-radius: 3px;
 }
 
 // FOOTER
