@@ -1,4 +1,4 @@
-.menu__header, .map, .about {
+.menu__header, .map, .about, .menu__title, .full__menu, .operation__step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,6 +52,125 @@ li {
   list-style-type: none;
 }
 
+.menu__header i {
+  position: relative;
+  right: 40px;
+  font-size: 1.2em;
+}
+
+.header__img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  max-height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__main {
+  background-color: #f5f5f5;
+}
+
+.menu {
+  position: relative;
+  bottom: 50px;
+  background-color: #f5f5f5;
+  border-radius: 45px 45px 0 0;
+}
+
+.menu__title {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu h1 {
+  margin-top: 35px;
+  margin-right: 0;
+  margin-bottom: 15px;
+  margin-left: 0;
+  font-size: 1.7em;
+}
+
+.menu i {
+  font-size: 1.4em;
+  margin-left: 20px;
+  padding-top: 18px;
+  color: #7a7979;
+}
+
+.full__menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.full__menu h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1em;
+  margin-top: 15px;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+
+.full__menu .line {
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
+.meals {
+  background-color: white;
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 3px 3px 7px #d6d5d5;
+          box-shadow: 3px 3px 7px #d6d5d5;
+  width: 340px;
+  height: 68px;
+}
+
+.meals h4 {
+  margin-top: 15px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+}
+
+.meals p {
+  margin: 0;
+  padding-top: 2px;
+  padding-right: 0;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: .9em;
+}
+
+.meals span {
+  padding-right: 18px;
+}
+
+.last__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .map {
   padding-top: 15px;
   padding-right: 0;
@@ -73,12 +192,12 @@ li {
 }
 
 .about {
-  background-color: #f5f5f5;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  background-color: #f5f5f5;
   padding-top: 20px;
   padding-right: 5px;
   padding-bottom: 60px;
@@ -123,13 +242,9 @@ li {
 }
 
 .operation__step {
-  text-align: center;
-  padding-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 20px;
 }
 
 .operation__step li {
@@ -137,9 +252,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -175,7 +287,7 @@ li {
   bottom: 0;
   left: -10px;
   font-size: 1.3rem;
-  color: #8a8a8a;
+  color: #7a7979;
 }
 
 .operation__step li p {
@@ -184,45 +296,47 @@ li {
 }
 
 .operation_step--number {
-  background-color: #9356DC;
-  padding-top: 2px;
-  padding-right: 8px;
-  padding-bottom: 2px;
-  padding-left: 8px;
-  border-radius: 50%;
-  color: white;
   position: relative;
   top: 0;
   right: 0;
   bottom: 0;
   left: -26px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
 }
 
 .restaurant {
-  background-color: #f5f5f5;
   padding-top: 40px;
   padding-right: 0;
   padding-bottom: 40px;
   padding-left: 0;
+  background-color: #f5f5f5;
 }
 
 .restaurant__title {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 18px;
-  font-size: 1.4em;
   position: relative;
   top: 10px;
   right: 0;
   bottom: 0;
   left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 18px;
+  font-size: 1.4em;
 }
 
 .restaurant__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -241,10 +355,7 @@ li {
 }
 
 .card figure {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 18px;
+  margin: 0;
   background-color: white;
   width: 340px;
   border-radius: 1rem;
@@ -272,38 +383,35 @@ li {
   bottom: 0;
   left: 295px;
   font-size: 1.5rem;
-  color: #8a8a8a;
+  color: #7a7979;
   cursor: pointer;
 }
 
-.card i:hover {
-  color: #99E2D0;
-}
-
 .card p {
+  position: relative;
+  bottom: 23px;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 10px;
-  position: relative;
-  bottom: 23px;
 }
 
 .new {
   position: relative;
-  top: 50px;
+  top: 45px;
   right: 0;
   bottom: 0;
-  left: 260px;
-  width: 70px;
-  background-color: #99E2D0;
-  color: #008766;
-  border-radius: 3px;
+  left: 240px;
+  text-align: center;
+  font-weight: bold;
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
-  text-align: center;
+  width: 70px;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 3px;
 }
 
 footer {
@@ -337,5 +445,29 @@ footer .fa-hands-helping {
 
 footer li {
   padding-bottom: 5px;
+}
+
+.btn__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn__order {
+  border: transparent;
+  border-radius: 30px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  color: white;
+  font-size: 1.05em;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-right: 47px;
+  padding-bottom: 15px;
+  padding-left: 47px;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

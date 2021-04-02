@@ -7,7 +7,82 @@
 .menu__header, .map, .about{
     @extend %center;
 }
+.menu__header i{
+    position: relative;
+    right: 40px;
+    font-size: 1.2em;
+}
+.header__img img{
+    display: flex;
+    @include dimension (100%,20%);
+    max-height: 275px;
+    object-fit: cover;
 
+}
+.menu__main{
+    background-color: $background-color-gray;
+}
+
+.menu{
+    position:relative;
+    bottom: 50px;
+    background-color: $background-color-gray;
+    border-radius: 45px 45px 0 0;
+    &__title{
+        @extend %center;
+        flex-direction: row;
+    }
+    & h1{
+        @include margin (35px,0,15px,0);
+        font-size: 1.7em;
+    }
+    & i{
+        font-size: 1.4em;
+        margin-left: 20px;
+        padding-top: 18px;
+        color: $icon-color;
+    }
+}
+.full__menu{
+    @extend %center;
+    flex-direction: column;
+    & h3{
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1em;
+        @include margin (15px,0,5px,0);
+    }
+    & .line{
+        display: block;
+        @include dimension (45px,3px);
+        background-color: $tertiary-color;
+    }
+}
+.meals{
+    background-color: white;
+    border-radius: 1.2rem;
+    box-shadow: 3px 3px 7px $shadow;
+    @include dimension (340px,68px);
+    & h4{
+        @include margin (15px,0,0,0);
+        @include padding (10px,0,0,15px);
+    }
+    & p{
+        margin: 0;
+        @include padding (2px,0,5px,15px);
+        font-size: .9em;
+    }
+    & span{
+        padding-right: 18px;
+    }
+}
+.last__line{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 // MAP
 
 .map{
@@ -28,9 +103,9 @@
 // ABOUT
 
 .about{
-    background-color: $background-color-gray;
     flex-direction: column;
     text-align: center;
+    background-color: $background-color-gray;
     @include padding (20px, 5px, 60px, 5px);
     & h2{
         font-size: 1.5em;
@@ -53,10 +128,9 @@
         @include margin(50px, 0, 20px, 20px);
     }
     &__step{
-        text-align: center;
-        padding-left: 20px;
-        display: flex;
+        @extend %center;
         flex-wrap: wrap;
+        padding-left: 20px;
     }
 }
 .operation__step li{
@@ -68,7 +142,6 @@
         color: $primary-color;
     }
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     background-color: $background-color-gray;
     @include margin (5px, 20px, 25px, 10px);
@@ -88,25 +161,26 @@
     }
 }
 .operation_step--number{
-    background-color: $primary-color;
+    @include position (0,0,0,-26px);
     @include padding (2px,8px,2px,8px);
+    background-color: $primary-color;
     border-radius: 50%;
     color: white;
-    @include position (0,0,0,-26px);
 }
 
 // RESTAURANT 
 
 .restaurant{
-    background-color: $background-color-gray;
     @include padding (40px,0,40px,0);
+    background-color: $background-color-gray;
     &__title{
+        @include position (10px,0,0,0);
         @include margin (0,0,0,18px);
         font-size: 1.4em;
-        @include position (10px,0,0,0);
     }
     &__card{
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 }
@@ -119,7 +193,7 @@
         object-fit: cover;
     }
     & figure{
-        @include margin (0,0,0,18px);
+        margin: 0;
         background-color: white;
         width: 340px;
         border-radius: 1rem;
@@ -138,25 +212,23 @@
         font-size: 1.5rem;
         color: $icon-color;
         cursor: pointer;
-        &:hover{
-            color: $tertiary-color;
-        }
     }
     & p{
-        @include margin (0,0,0,10px);
         position: relative;
         bottom: 23px;
+        @include margin (0,0,0,10px);
     }
 }
 
 .new{
-    @include position (50px,0,0,260px);
+    @include position (45px,0,0,240px);
+    text-align: center;
+    font-weight: bold;
+    @include padding (5px,10px,5px,10px);
     width: 70px;
     background-color: $tertiary-color;
     color: #008766;
     border-radius: 3px;
-    @include padding (5px,10px,5px,10px);
-    text-align: center;
 }
 
 // FOOTER
@@ -181,4 +253,15 @@ footer{
     & li{
         padding-bottom: 5px;
     }
+}
+
+// order
+.btn__container{
+    display: flex;
+    justify-content: center;
+}
+.btn__order{
+    @include purple-btn;
+    @include padding (15px,47px,15px,47px);
+    margin-top: 50px;
 }
