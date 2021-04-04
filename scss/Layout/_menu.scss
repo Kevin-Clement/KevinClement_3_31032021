@@ -1,0 +1,109 @@
+
+.menu__main {
+    background-color: $background-color-gray;
+}
+
+.menu {
+    position: relative;
+    bottom: 50px;
+    @include background-border ($background-color-gray, 45px, 45px, 0, 0);
+    &__title {
+        @extend %center;
+        flex-direction: row;
+    }
+    & h1 {
+        @include margin (35px, 0, 0, 0);
+        font-size: 1.7em;
+    }
+}
+
+.full__menu {
+    @extend %center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    & h3 {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1em;
+        @include margin (35px, 0, 5px, 0);
+    }
+    & .line {
+        display: block;
+        @include dimension (45px, 3px);
+        background-color: $tertiary-color;
+    }
+}
+
+// MEALS 
+
+.meals {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    @include background-border (white, 1.2rem, 1.2rem, 1.2rem, 1.2rem);
+    box-shadow: 3px 3px 7px $shadow;
+    @include dimension (340px, 65px);
+    overflow: hidden;
+    margin-top: 15px;
+    & h4 {
+        @include padding (0, 0, 0, 15px);
+    }
+    & p {
+        @include padding (2px, 0, 0, 15px);
+        font-size: .9em;
+        @extend %overflow;
+    }
+    & span {
+        padding-right: 18px;
+        padding-left: 15px;
+    }
+    &:hover {
+        & .price{
+            padding-left: 70px;
+            transform: translate(-60px);
+            transition: 400ms ease-in-out;
+        }
+        & .cross {
+            opacity: 1;
+            transform: translate(-50px);
+            transition: 500ms ease-in-out;
+        }
+        & .rotate{
+            transform: rotate(360deg);
+            transition: 600ms ease-in-out;
+        }
+    }   
+}
+.rotate{
+    display: flex;
+    justify-content: center;
+    width: 2px;
+    border-radius: 50%;
+    background-color: $tertiary-color;
+}
+.cross {
+    @extend %center;
+    background-color: $tertiary-color;
+    width: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -50px;
+    opacity: 0;
+    & .fa-check-circle {
+        position: relative;
+        bottom: 15px;
+        right: 10px;
+        color: #fff;
+    }
+}
+
+.last__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

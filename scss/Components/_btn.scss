@@ -1,0 +1,22 @@
+
+// BOUTON ABOUT
+
+.btn__about {
+    @include purple-btn;
+    @include hover-btn;
+    padding: 15px;
+}
+
+// BOUTON ORDER
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn__order {
+    @include purple-btn;
+    @include padding (15px, 47px, 15px, 47px);
+    @include hover-btn;
+    margin-top: 50px;
+}

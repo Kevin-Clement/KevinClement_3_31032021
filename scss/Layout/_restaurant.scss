@@ -1,0 +1,34 @@
+
+.restaurant {
+    @include padding (40px, 0, 40px, 0);
+    background-color: $background-color-gray;
+    &__title {
+        @include position (10px, 0, 0, 0);
+        @include margin (0, 0, 0, 18px);
+        font-size: 1.4em;
+    }
+    &__card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    @include card;
+}
+.card__old{
+    @include card;
+    margin-top: 30px;
+}
+
+.new {
+    @include position (45px, 0, 0, 240px);
+    text-align: center;
+    font-weight: bold;
+    @include padding (5px, 10px, 5px, 10px);
+    width: 85px;
+    @include background-border ($tertiary-color, 3px, 3px, 3px, 3px);
+    color: #008766;
+}

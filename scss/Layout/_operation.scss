@@ -1,0 +1,37 @@
+
+.operation {
+    & h2 {
+        @include margin(50px, 0, 20px, 20px);
+    }
+    &__step {
+        @extend %center;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+}
+
+.operation__step li {
+    cursor: pointer;
+    &:hover {
+        background: #f2eafb;
+    }
+    display: flex;
+    align-items: center;
+    @include background-border ($background-color-gray, 20px, 20px, 20px, 20px);
+    @include margin (5px, 20px, 25px, 10px);
+    @include padding (25px, 15px, 25px, 15px);
+    box-shadow: 3px 5px 6px $shadow;
+    width: 325px;
+    & p {
+        padding-left: 10px;
+        font-weight: 600;
+    }
+}
+
+
+.operation_step--number {
+    @include position (0, 0, 0, -26px);
+    @include padding (2px, 8px, 2px, 8px);
+    @include background-border ($primary-color, 50%, 50%, 50%, 50%);
+    color: white;
+}

@@ -1,0 +1,33 @@
+.menu__header i {
+    position: relative;
+    right: 40px;
+    font-size: 1.2em;
+    padding-top: 12px;
+    
+}
+
+.menu i {
+    font-size: 1.4em;
+    margin-left: 20px;
+    padding-top: 35px;
+    color: $icon-color;
+}
+
+.operation__step i {
+    @include dimension (20px, 20px);
+    @include position (0, 0, 0, -10px);
+    font-size: 1.2rem;
+    color: $icon-color;
+    &:hover i {
+        color: $primary-color;
+    }
+}
+
+footer {
+    & i{
+    padding-right: 10px;
+    }
+    & .fa-hands-helping {
+    font-size: .7em;
+    }
+}
