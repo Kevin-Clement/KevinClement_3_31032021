@@ -1,4 +1,5 @@
 .map {
+    @extend %center;
     @include padding (15px, 0, 15px, 20px);
     background-color: $background-color-map;
     box-shadow: inset 0 5px 5px $shadow;

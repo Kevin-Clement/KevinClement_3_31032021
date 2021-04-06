@@ -1,0 +1,45 @@
+.loader {
+    background: #e8e8e8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    animation: load 4s ease-out forwards;
+
+    &__large--spinner {
+        height: 4rem;
+        width: 4rem;
+        display: inline-block;
+        position: absolute;
+        top: 250px;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        border-top-color: $primary-color;
+        animation: spin-load 1s linear infinite;
+    }
+
+    &__medium--spinner {
+        height: 3rem;
+        width: 3rem;
+        display: inline-block;
+        position: absolute;
+        top: 258px;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        border-left-color: $secondary-color;
+        animation: spin-load 1.1s linear infinite;
+    }
+
+    &__small--spinner {
+        height: 2rem;
+        width: 2rem;
+        display: inline-block;
+        position: absolute;
+        top: 266px;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        border-bottom-color: $tertiary-color;
+        animation: spin-load 1.3s linear infinite;
+    }
+}

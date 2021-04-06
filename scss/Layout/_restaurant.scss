@@ -15,20 +15,24 @@
     }
 }
 
+// NEW RESTAURANT
 .card {
     @include card;
 }
+
+// OLD RESTAURANT
 .card__old{
     @include card;
     margin-top: 30px;
 }
 
+// NEW INFO
 .new {
     @include position (45px, 0, 0, 240px);
     text-align: center;
     font-weight: bold;
     @include padding (5px, 10px, 5px, 10px);
-    width: 85px;
+    width: 65px;
     @include background-border ($tertiary-color, 3px, 3px, 3px, 3px);
     color: #008766;
 }

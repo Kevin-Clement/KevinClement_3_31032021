@@ -1,8 +1,6 @@
-.map, .about {
-    @extend %center;
-}
 
 .about {
+    @extend %center;
     flex-direction: column;
     text-align: center;
     background-color: $background-color-gray;

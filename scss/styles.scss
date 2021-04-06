@@ -1,4 +1,25 @@
-@import './Base/rest','./Base/typography';
-@import './Utils/variables','./Utils/mixins';
-@import './Layout/header','./Layout/about','./Layout/operation','./Layout/restaurant','./Layout/menu','./Layout/footer';
-@import './Components/map','./Components/btn','./Components/icon';
+@import './Base/rest', './Base/typography';
+@import './Utils/variables', './Utils/mixins', './Utils/responsive','./Utils/keyframes';
+@import './Layout/loader','./Layout/header', './Layout/about', './Layout/operation', './Layout/restaurant', './Layout/menu', './Layout/footer';
+@import './Components/map', './Components/btn', './Components/icon';
+
+.meals__1{
+    animation: emergence 2s ease-in-out;
+}
+.meals__2{
+    animation: emergence 3s ease-in-out;
+    }
+.meals__3{
+    animation: emergence 4s ease-in-out;
+    }
+
+
+
+@keyframes emergence {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+        }
+}

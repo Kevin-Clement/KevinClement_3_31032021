@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     @include background-border ($background-color-gray, 20px, 20px, 20px, 20px);
-    @include margin (5px, 20px, 25px, 10px);
+    @include margin (5px, 20px, 25px, 20px);
     @include padding (25px, 15px, 25px, 15px);
     box-shadow: 3px 5px 6px $shadow;
     width: 325px;

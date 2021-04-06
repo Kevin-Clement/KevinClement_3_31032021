@@ -1,3 +1,5 @@
+
+// ARROW
 .menu__header i {
     position: relative;
     right: 40px;
@@ -6,6 +8,7 @@
     
 }
 
+// HEART
 .menu i {
     font-size: 1.4em;
     margin-left: 20px;
@@ -13,6 +16,7 @@
     color: $icon-color;
 }
 
+// PHONE LIST STORE
 .operation__step i {
     @include dimension (20px, 20px);
     @include position (0, 0, 0, -10px);
@@ -23,6 +27,7 @@
     }
 }
 
+// UTENSILS HANDS
 footer {
     & i{
     padding-right: 10px;
