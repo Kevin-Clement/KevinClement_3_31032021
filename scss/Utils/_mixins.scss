@@ -70,17 +70,16 @@
         font-weight: bold;
         font-size: 1.1em;
     }
-    & i {
-        @include position (-10px, 0, 0, 295px);
-        font-size: 1.5rem;
-        color: $icon-color;
-        cursor: pointer;
-    }
     & p {
-        position: relative;
-        bottom: 23px;
         @include margin (0, 0, 0, 10px);
     }
+}
 
+@mixin heart{
+    &:hover{
+        background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }
 

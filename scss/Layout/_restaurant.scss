@@ -4,7 +4,7 @@
     background-color: $background-color-gray;
     &__title {
         @include position (10px, 0, 0, 0);
-        @include margin (0, 0, 0, 18px);
+        @include margin (0, 0, 10px, 18px);
         font-size: 1.4em;
     }
     &__card {
@@ -13,6 +13,13 @@
         align-items: center;
         flex-wrap: wrap;
     }
+}
+
+.last{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-right: 20px;
 }
 
 // NEW RESTAURANT

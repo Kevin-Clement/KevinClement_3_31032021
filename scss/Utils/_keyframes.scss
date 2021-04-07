@@ -14,18 +14,49 @@
         opacity: 1;
         z-index: 3;
     }
-    60%{
+    70%{
         opacity: 1;
     }
     85% {
         opacity: 0.6;
     }
-    99% {
+    95% {
         opacity: 0.2;
         z-index: 1;
     }
     100% {
         opacity: 0;
         z-index: -1;
+    }
+}
+
+// Apparition progressive des plats
+
+@keyframes emergence {
+    0% {
+        opacity:0;
+    }
+    40%{
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.5;
+        }
+    95%{
+        opacity: 0.9;
+    }
+    100% {
+        opacity:1;
+        }
+}
+
+// Apparition progressive du coeur
+
+@keyframes filling {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
