@@ -584,7 +584,8 @@ h1 {
   padding-top: 30px;
 }
 
-.menu h1 {
+.menu h2 {
+  font-family: 'Shrikhand';
   margin: 0;
   font-size: 1.7em;
 }
